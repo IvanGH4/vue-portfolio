@@ -49,7 +49,7 @@
                 <a href="https://github.com/IvanGH4/movie-list" target="_blank"><i class="fab fa-github mx-10"></i>Repo</a>
               </div>
           </div>
-      </div>
+      </div> 
   </div>
 </transition>
 </template>

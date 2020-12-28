@@ -14,9 +14,7 @@
 .card {
     width: 50%;
     background: rgba(255, 255, 255,0.3);
-    backdrop-filter: blur(40px);
     border: solid 2px transparent;
-    background-clip: padding-box;
     overflow: hidden;
     box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
 }
