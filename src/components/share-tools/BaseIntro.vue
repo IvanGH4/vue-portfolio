@@ -17,6 +17,7 @@
                 <p>
                     I am very interested on keep growing as a developer and as a person. I am looking forward to have my first work experience where I can apply all my knowledge!
                 </p>
+                <a href="https://www.linkedin.com/in/iv%C3%A1n-garc%C3%ADa-harriague-8a71b91b7/" target="_blank">Contact me</a>
             <div class="my-40">
                 <router-link to="/projects" class="bg-light border-primary rounded-sm d-block t-center text-primary py-10 px-20 work-btn">Take a look at my work</router-link>
             </div>

@@ -20,12 +20,15 @@
         </ul>
         <ul :class="[menu, {'show': isMenuOpen}]">
             <li>
-                <router-link to="/">Home</router-link>
+                <router-link class="link-menu-item" to="/">Home</router-link>
             </li>
             <li>
-                <router-link to="/projects">Projects</router-link>
+                <router-link class="link-menu-item" to="/projects">Projects</router-link>
             </li>
-            <li class="icons">
+            <li>
+                <router-link class="link-menu-item" to="/about">About me</router-link>
+            </li>
+            <li class="icons menu-links">
                 <a class="text-primary mx-5" href="https://www.linkedin.com/in/iv%C3%A1n-garc%C3%ADa-harriague-8a71b91b7/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a class="text-primary mx-5" href="https://twitter.com/ivanGH_4" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a class="text-primary mx-5" href="https://github.com/IvanGH4" target="_blank"><i class="fab fa-github"></i></a>

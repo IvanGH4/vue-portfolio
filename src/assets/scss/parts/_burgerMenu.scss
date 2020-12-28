@@ -9,7 +9,6 @@
     padding: 0;
     width: 60px;
     height: 60px;
-  
     span{
       border-radius: 5px;
       background: white;
@@ -22,6 +21,13 @@
     }
   }
   
+.link-menu-item {
+  transition: .2s ease-in-out;
+  &:hover {
+    @extend .text-info;
+  }
+}
+
   .hamburger.open .top-line{
     animation-name: top-line-animation;
   }
@@ -107,12 +113,21 @@
     }
   }
 
+.menu-links {
+  a {
+    transition: .2s ease-in-out;
+    &:hover {
+      @extend .text-info;
+    }
+  }
+}
+
 .side-menu {
   transform: scaleX(0);
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 40%;
   height: 100vh;
   padding: 40px;
   display: flex;
@@ -136,4 +151,10 @@
 
 .side-menu.show {
   transform: scaleX(1);
+}
+
+@media(max-width: 800px) {
+  .side-menu {
+    width: 100%;
+  }
 }

@@ -2,6 +2,7 @@
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    padding-top: 100px;
 }
 
 .my-pic {
@@ -68,4 +69,25 @@
     transform: translateX(-200px);
     transition-delay: .5s;
     opacity: 0;
+  }
+
+  @media(min-width:1500px) {
+    .container-portada {
+      min-height: 90vh;
+    }
+    .my-pic {
+      margin-bottom: 50px;
+    }
+  }
+
+  @media(max-width: 800px) {
+    .container-portada {
+      flex-direction: column;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .portada-left, .portada-right {
+      width: 100%;
+    }
   }

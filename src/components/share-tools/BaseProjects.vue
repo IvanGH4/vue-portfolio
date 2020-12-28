@@ -1,6 +1,10 @@
 <template>
 <transition name="fade">
   <div class="container-projects text-light" v-if="showing">
+      <div class="image">
+          <h2>My Projects!</h2>
+          <img src="@/assets/imgs/team.svg" alt="free" />
+      </div>
       <div class="card rounded-sm">
           <div class="gradient-bg">
               <img src="@/assets/imgs/cpgames.png" alt="#" />
@@ -13,13 +17,6 @@
                 <a href="https://github.com/IvanGH4/cap-gaming" target="_blank"><i class="fab fa-github mx-10"></i>Repo</a>
               </div>
           </div>
-      </div>
-      <div class="image">
-          <h2>My Projects!</h2>
-          <img src="@/assets/imgs/team.svg" alt="free" />
-      </div>
-      <div class="image">
-          <img src="@/assets/imgs/weather.svg" alt="free" />
       </div>
        <div class="card rounded-sm">
           <div class="gradient-bg">
@@ -34,6 +31,12 @@
               </div>
           </div>
       </div>
+      <div class="image w">
+          <img src="@/assets/imgs/weather.svg" alt="free" />
+      </div>
+       <div class="image">
+          <img src="@/assets/imgs/movie.svg" alt="free" />
+      </div>
        <div class="card rounded-sm">
           <div class="gradient-bg">
               <img src="@/assets/imgs/movieList-min.png" alt="#" />
@@ -46,9 +49,6 @@
                 <a href="https://github.com/IvanGH4/movie-list" target="_blank"><i class="fab fa-github mx-10"></i>Repo</a>
               </div>
           </div>
-      </div>
-       <div class="image">
-          <img src="@/assets/imgs/movie.svg" alt="free" />
       </div>
   </div>
 </transition>
