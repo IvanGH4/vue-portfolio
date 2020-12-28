@@ -138,11 +138,13 @@
   transform-origin: left center;
   // transition: all .4s ease-in;
   transition: all 1s cubic-bezier(1, 0, 0, 1);
-  z-index: 1800;
+  z-index: 9998;
   @extend .text-light;
   li {
     @extend .my-10;
+    z-index: 999;
     a {
+      z-index: 9999;
       @extend .text-light;
       font-size: 28px;
     }
