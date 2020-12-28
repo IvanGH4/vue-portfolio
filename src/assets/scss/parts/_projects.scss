@@ -1,0 +1,62 @@
+.container-projects {
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #333333;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23333333' width='11' height='11'/%3E%3Crect fill='%23343434' x='10' width='11' height='11'/%3E%3Crect fill='%23343535' y='10' width='11' height='11'/%3E%3Crect fill='%23353736' x='20' width='11' height='11'/%3E%3Crect fill='%23353837' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23363938' y='20' width='11' height='11'/%3E%3Crect fill='%23363a39' x='30' width='11' height='11'/%3E%3Crect fill='%23373c3a' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23383d3b' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23383e3c' y='30' width='11' height='11'/%3E%3Crect fill='%23393f3d' x='40' width='11' height='11'/%3E%3Crect fill='%2339413e' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%233a423f' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%233a4340' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%233b4441' y='40' width='11' height='11'/%3E%3Crect fill='%233b4642' x='50' width='11' height='11'/%3E%3Crect fill='%233c4743' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%233c4844' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%233d4945' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%233e4b46' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%233e4c47' y='50' width='11' height='11'/%3E%3Crect fill='%233f4d48' x='60' width='11' height='11'/%3E%3Crect fill='%233f4e49' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%2340504a' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%2340514b' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%2341524c' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%2341544d' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%2342554e' x='70' width='11' height='11'/%3E%3Crect fill='%2342564f' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23435850' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23435952' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23445a53' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23445b54' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23455d55' x='80' width='11' height='11'/%3E%3Crect fill='%23455e56' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23465f57' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23466158' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23476259' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%2347635a' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%2348655b' x='90' width='11' height='11'/%3E%3Crect fill='%2348665c' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%2349675d' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%2349695e' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%234a6a5f' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%234a6b60' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%234b6d62' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%234b6e63' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%234c7064' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%234c7165' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%234c7266' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%234d7467' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%234d7568' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%234e7669' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%234e786a' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%234f796b' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%234f7a6d' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23507c6e' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23507d6f' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23517f70' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23518071' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    // transform: translateY(-30px);
+}
+
+.card {
+    width: 50%;
+    background: rgba(255, 255, 255,0.3);
+    backdrop-filter: blur(40px);
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
+}
+
+.proj-link {
+    margin-top: 20px;
+    justify-content: space-between;
+    a {
+        @extend .text-secondary;
+    }
+}
+
+.image {
+    h2 {
+        font-size: 28px;
+    }
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    img {
+        width: 50%;
+    }
+}
+
+.gradient-bg {
+    width: 100%;
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+// animations
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+    transition-delay: .5s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }

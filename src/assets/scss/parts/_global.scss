@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding-top: 100px;
+}
+
+button {
+    font-family: inherit;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.t-center {
+    text-align: center;
+}
+
+ // color palette
+$colors: (primary: #333333, secondary: #00c896, light: #c8fcea, info: #518071);
+
+@each $key, $color in $colors {
+    .bg-#{$key} {background-color: $color;}
+    .border-#{$key} {border: solid 1px $color;}
+}
+
+@each $t, $color in $colors {
+    .text-#{$t} {color: $color;}
+}
+
+// border radius
+$radius: (sm: 5px, md: 10px, lg: 20px);
+
+@each $b, $radium in $radius {
+    .rounded-#{$b} {border-radius: $radium;}
+}
+
+// margins and paddings
+$spacing: (5, 10, 15, 20, 25, 30, 40);
+
+@each $space in $spacing {
+    .py-#{$space} {
+        padding-top: $space + px;
+        padding-bottom: $space + px;
+    }
+
+    .px-#{$space} {
+        padding-left: $space + px;
+        padding-right: $space + px;
+    }
+
+    .my-#{$space} {
+        margin-top: $space + px;
+        margin-bottom: $space + px;
+    }
+
+    .mx-#{$space} {
+        margin-left: $space + px;
+        margin-right: $space + px;
+    }
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}

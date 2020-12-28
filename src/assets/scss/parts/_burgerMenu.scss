@@ -1,0 +1,139 @@
+.hamburger{
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    z-index: 9999;
+    cursor: pointer;
+    background: none;
+    border: 0;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+  
+    span{
+      border-radius: 5px;
+      background: white;
+      display: block;
+      width: 60%;
+      margin: 5px auto;
+      height: 2px;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+  }
+  
+  .hamburger.open .top-line{
+    animation-name: top-line-animation;
+  }
+  
+  .hamburger.open .middle-line{
+    animation-name: middle-line-animation;
+  }
+  
+  .hamburger.open .bottom-line{
+    animation-name: bottom-line-animation;
+  }
+  
+  .top-line{
+    animation-name: top-line-animation-close;
+  }
+  
+  .middle-line{
+    animation-name: middle-line-animation-close;
+  }
+  
+  .bottom-line{
+    animation-name: bottom-line-animation-close;
+  }
+  
+  @keyframes top-line-animation{
+    50%, 100%{
+      margin: 0 auto;
+      transform: translateY(2px) rotate(-45deg);
+    }
+  }
+  
+  @keyframes bottom-line-animation{
+    50%, 100%{
+      margin: 0 auto;
+      transform: translateY(-2px) rotate(45deg);
+    }
+  }
+  
+  @keyframes middle-line-animation{
+    20%, 100%{
+      margin: 0 auto;
+      width: 0;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes top-line-animation-close{
+    0%{
+      margin: 0 auto;
+      transform: translateY(2px) rotate(-45deg);
+    }
+  
+    50%, 100%{
+      margin: 5px auto;
+      transform: translateY(0px) rotate(0deg);
+  
+    }
+  }
+  
+  @keyframes middle-line-animation-close{
+    0%{
+      margin: 0 auto;
+      width: 0;
+      opacity: 0;
+    }
+  
+    20%, 100%{
+      margin: 5px auto;
+      width: 60%;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bottom-line-animation-close{
+    0%{
+      margin: 0 auto;
+      transform: translateY(-2px) rotate(45deg);
+    }
+  
+    50%, 100%{
+      margin: 5 auto;
+      transform: translateY(0px) rotate(0deg);
+    }
+  }
+
+.side-menu {
+  transform: scaleX(0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0 ,0, 0, 0.7);
+  transform-origin: left center;
+  // transition: all .4s ease-in;
+  transition: all 1s cubic-bezier(1, 0, 0, 1);
+  z-index: 1800;
+  @extend .text-light;
+  li {
+    @extend .my-10;
+    a {
+      @extend .text-light;
+      font-size: 28px;
+    }
+  }
+}
+
+.side-menu.show {
+  transform: scaleX(1);
+}

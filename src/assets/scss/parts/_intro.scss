@@ -1,0 +1,71 @@
+.container-portada {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.my-pic {
+    justify-content: flex-start;
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+}
+
+.portada-left {
+    width: 50%;
+}
+
+.portada-right {
+    width: 50%;
+    text-align: center;
+}
+
+
+.work-btn {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.techs {
+    width: 100%;
+    .row {
+        img {
+            width: 100px;
+            @extend .my-10;
+            @extend .mx-10;
+        }
+    }
+}
+
+// animations 
+.slide-fade-enter-active {
+    transition: all .5s ease;
+    transition-delay: .5s;
+  }
+  .slide-fade-leave-active {
+    transition: all 1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    transition-delay: .5s;
+
+  }
+  .slide-fade-enter, .slide-fade-leave-to
+  /* .slide-fade-leave-active below version 2.1.8 */ {
+    transform: translateX(200px);
+    transition-delay: .5s;
+    opacity: 0;
+  }
+
+  .slide-enter-active {
+    transition: all .5s ease;
+    transition-delay: .5s;
+  }
+  .slide-leave-active {
+    transition: all 1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    transition-delay: .5s;
+  }
+  .slide-enter, .slide-leave-to
+  /* .slide-leave-active below version 2.1.8 */ {
+    transform: translateX(-200px);
+    transition-delay: .5s;
+    opacity: 0;
+  }
