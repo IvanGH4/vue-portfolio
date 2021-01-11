@@ -1,10 +1,26 @@
 <template>
 <transition name="fade">
   <div class="container-projects text-light" v-if="showing">
-      <div class="image">
+
+      <div :class="[sidebar, {'opened': isSideOpen}]">
+          <button class="btn bg-secondary" @click="showSidebar">
+            <i :class="['fas', {'fa-angle-left': !isSideOpen}, {'fa-angle-right': isSideOpen}]"></i>
+          </button>
+          <small>
+              <a href="https://testimonial-grid-woad.vercel.app/" target="_blank">Testimonial Grid</a>
+          </small>
+          <small>
+              <a href="https://ping-coming-soon-challenge.vercel.app/" target="_blank">Coming Soon Page</a>
+          </small>
+          <small>
+              <a href="https://huddle-landing-challenge.vercel.app/" target="_blank">Landing</a>
+          </small>
+      </div>
+
+      <!-- <div class="image">
           <h2>My Projects!</h2>
           <img src="@/assets/imgs/team.svg" alt="free" />
-      </div>
+      </div> -->
       <div class="card rounded-sm">
           <div class="gradient-bg">
               <img src="@/assets/imgs/cpgames.png" alt="#" />
@@ -31,12 +47,12 @@
               </div>
           </div>
       </div>
-      <div class="image w">
+      <!-- <div class="image w">
           <img src="@/assets/imgs/weather.svg" alt="free" />
       </div>
        <div class="image">
           <img src="@/assets/imgs/movie.svg" alt="free" />
-      </div>
+      </div> -->
        <div class="card rounded-sm">
           <div class="gradient-bg">
               <img src="@/assets/imgs/movieList-min.png" alt="#" />
@@ -50,6 +66,23 @@
               </div>
           </div>
       </div> 
+      
+       <div class="card rounded-sm">
+          <div class="gradient-bg">
+              <img src="@/assets/imgs/todoapp-min.png" alt="todo" />
+          </div>
+          <div class="desc px-20 py-20">
+              <h2 class="my-10">Todo App</h2>
+              <p>In this todo app you can store your todos, filter them, and delete them. There's also a theme picker. <small>Idea from <a href="https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW" target="_blank">Front end Mentor</a></small></p>
+              <div class="d-flex proj-link">
+                <a href="https://todo-app-ruddy.vercel.app/" target="_blank">Live Project</a>
+                <a href="https://github.com/IvanGH4/todo-app-challenge" target="_blank"><i class="fab fa-github mx-10"></i>Repo</a>
+              </div>
+          </div>
+      </div> 
+      <!-- <div class="image">
+          <img src="@/assets/imgs/todo.svg" alt="tasks" />
+      </div> -->
   </div>
 </transition>
 </template>
@@ -57,13 +90,25 @@
 <script>
 export default {
     name: 'BaseProjects',
+    props: {
+        sidebar: {
+            type: String,
+            default: 'side-bar'
+        }
+    },
     data() {
         return {
-            showing: false
+            showing: false,
+            isSideOpen: false
         }
     },
     mounted() {
         this.showing = true
+    },
+    methods: {
+        showSidebar() {
+            this.isSideOpen = !this.isSideOpen;
+        }
     }
 }
 </script>
