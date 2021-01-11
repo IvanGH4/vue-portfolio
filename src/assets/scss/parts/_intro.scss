@@ -2,6 +2,7 @@
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     padding-top: 100px;
 }
 
@@ -15,12 +16,12 @@
 }
 
 .portada-left {
-    width: 50%;
+  width: 50%;
 }
 
 .portada-right {
-    width: 50%;
-    text-align: center;
+  width: 50%;
+  text-align: center;
 }
 
 
@@ -89,5 +90,6 @@
 
     .portada-left, .portada-right {
       width: 100%;
+      text-align: center;
     }
   }
