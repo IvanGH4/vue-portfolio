@@ -21,11 +21,11 @@
           <h2>My Projects!</h2>
           <img src="@/assets/imgs/team.svg" alt="free" />
       </div> -->
-      <div class="card rounded-sm">
+      <div class="card rounded-sm px-20 py-20">
           <div class="gradient-bg">
-              <img src="@/assets/imgs/cpgames.png" alt="#" />
+              <img class="rounded-sm" src="@/assets/imgs/cpgames.png" alt="#" />
           </div>
-          <div class="desc px-20 py-20">
+          <div class="desc">
               <h2 class="my-10">Capital Games</h2>
               <p>For this project I used Firebase firestore, auth, and Vue Js / Vuex / Vue router. Go play !</p>
               <div class="d-flex proj-link">
@@ -34,11 +34,26 @@
               </div>
           </div>
       </div>
-       <div class="card rounded-sm">
+
+      <div class="card rounded-sm px-20 py-20">
           <div class="gradient-bg">
-              <img src="@/assets/imgs/weather.png" alt="#" />
+              <img class="rounded-sm" src="@/assets/imgs/todoapp-min.png" alt="todo" />
           </div>
-          <div class="desc px-20 py-20">
+          <div class="desc">
+              <h2 class="my-10">Todo App</h2>
+              <p>In this todo app you can store your todos, filter them, and delete them. There's also a theme picker. <small>Idea from <a href="https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW" target="_blank">Front end Mentor</a></small></p>
+              <div class="d-flex proj-link">
+                <a href="https://todo-app-ruddy.vercel.app/" target="_blank">Live Project</a>
+                <a href="https://github.com/IvanGH4/todo-app-challenge" target="_blank"><i class="fab fa-github mx-10"></i>Repo</a>
+              </div>
+          </div>
+      </div> 
+
+       <div class="card rounded-sm px-20 py-20">
+          <div class="gradient-bg">
+              <img class="rounded-sm" src="@/assets/imgs/weather.png" alt="#" />
+          </div>
+          <div class="desc">
               <h2 class="my-10">Weather App</h2>
               <p>Simple weather app using Vue js and Open Weather Map API. Find the weather for any place.</p>
               <div class="d-flex proj-link">
@@ -53,11 +68,11 @@
        <div class="image">
           <img src="@/assets/imgs/movie.svg" alt="free" />
       </div> -->
-       <div class="card rounded-sm">
+       <div class="card rounded-sm px-20 py-20">
           <div class="gradient-bg">
-              <img src="@/assets/imgs/movieList-min.png" alt="#" />
+              <img class="rounded-sm" src="@/assets/imgs/movieList-min.png" alt="#" />
           </div>
-          <div class="desc px-20 py-20">
+          <div class="desc">
               <h2 class="my-10">Movie List</h2>
               <p>This project lists movies from TheMovieDB. It includes pagination and a search option.</p>
               <div class="d-flex proj-link">
@@ -66,20 +81,7 @@
               </div>
           </div>
       </div> 
-      
-       <div class="card rounded-sm">
-          <div class="gradient-bg">
-              <img src="@/assets/imgs/todoapp-min.png" alt="todo" />
-          </div>
-          <div class="desc px-20 py-20">
-              <h2 class="my-10">Todo App</h2>
-              <p>In this todo app you can store your todos, filter them, and delete them. There's also a theme picker. <small>Idea from <a href="https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW" target="_blank">Front end Mentor</a></small></p>
-              <div class="d-flex proj-link">
-                <a href="https://todo-app-ruddy.vercel.app/" target="_blank">Live Project</a>
-                <a href="https://github.com/IvanGH4/todo-app-challenge" target="_blank"><i class="fab fa-github mx-10"></i>Repo</a>
-              </div>
-          </div>
-      </div> 
+    
       <!-- <div class="image">
           <img src="@/assets/imgs/todo.svg" alt="tasks" />
       </div> -->
