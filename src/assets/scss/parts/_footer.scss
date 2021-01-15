@@ -7,7 +7,9 @@ footer {
         justify-content: space-between;
         align-items: center;
         p {
-            cursor: pointer;
+            &:last-child {
+              cursor: pointer;
+            }
             align-items: center;
         }
         .fa-envelope {
@@ -41,6 +43,10 @@ footer {
     footer {
       div {
         flex-direction: column;
+
+        p {
+          text-align: center;
+        }
       }
     }
     .fa-envelope {

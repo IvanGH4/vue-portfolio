@@ -51,14 +51,14 @@
 
        <div class="card rounded-sm px-20 py-20">
           <div class="gradient-bg">
-              <img class="rounded-sm" src="@/assets/imgs/weather.png" alt="#" />
+              <img class="rounded-sm" src="@/assets/imgs/mem-min.png" alt="#" />
           </div>
           <div class="desc">
-              <h2 class="my-10">Weather App</h2>
-              <p>Simple weather app using Vue js and Open Weather Map API. Find the weather for any place.</p>
+              <h2 class="my-10">Memory Game</h2>
+              <p>Simple memory game built with Javascript</p>
               <div class="d-flex proj-link">
-                <a href="https://weatherapp-ig.web.app" target="_blank">Live Project</a>
-                <a href="https://github.com/IvanGH4/weather-app" target="_blank"><i class="fab fa-github mx-10"></i>Repo</a>
+                <a href="https://romantic-euclid-701120.netlify.app/" target="_blank">Live Project</a>
+                <a href="https://github.com/IvanGH4/memory-game" target="_blank"><i class="fab fa-github mx-10"></i>Repo</a>
               </div>
           </div>
       </div>

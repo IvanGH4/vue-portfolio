@@ -3,7 +3,8 @@
   <footer v-if="showFooter">
      <div>
        <h4>Thank you for your visit!</h4>
-       <p class="d-flex" @click="copy"><i class="fas fa-envelope"></i> {{mail}} <span><i class="far fa-copy"></i></span></p>
+       <p>Feel free to check my <a href="https://github.com/IvanGH4" target="_blank">GitHub</a> profile to see all my projects!</p>
+       <p class="d-flex" @click="copy"><i class="fas fa-envelope"></i> Send me an Email<span><i class="far fa-copy"></i></span></p>
      </div>
   </footer>
 </transition>
@@ -24,7 +25,7 @@ export default {
     methods: {
       copy() {
         navigator.clipboard.writeText(this.mail);
-          this.$toasted.show('Copied to clipboard!', { 
+          this.$toasted.show('Email copied to clipboard!', { 
             theme: "toasted-primary", 
             type: "success",
             position: "bottom-center", 
