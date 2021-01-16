@@ -58,6 +58,7 @@ export default {
     methods: {
         openMenu() {
             this.isMenuOpen = !this.isMenuOpen
+            this.$state.dispatch('setMenuOpen', true);
         }
     },
     watch: {

@@ -138,7 +138,7 @@
   transform-origin: left center;
   // transition: all .4s ease-in;
   transition: all 1s cubic-bezier(1, 0, 0, 1);
-  z-index: 9998;
+  z-index: 999;
   @extend .text-light;
   li {
     @extend .my-10;
