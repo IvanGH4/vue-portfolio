@@ -27,7 +27,6 @@
           </div>
           <div class="desc">
               <h2 class="my-10">Capital Games</h2>
-              <small v-if="isMenuOpen">Helloooo</small>
               <p>For this project I used Firebase firestore, auth, and Vue Js / Vuex / Vue router. Go play !</p>
               <div class="d-flex proj-link">
                 <a href="https://capitalgamesig.web.app" target="_blank">Live Project</a>
@@ -91,7 +90,6 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
 
 export default {
     name: 'BaseProjects',
@@ -115,11 +113,5 @@ export default {
             this.isSideOpen = !this.isSideOpen;
         }
     },
-    computed: {
-        ...mapState({
-            isMenuOpen: state => state.menuOpen
-        })
-
-    }
 }
 </script>
