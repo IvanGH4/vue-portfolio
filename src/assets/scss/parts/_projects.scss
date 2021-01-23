@@ -59,7 +59,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @extend .bg-secondary;
+    @extend .bg-primary;
     font-size: 18px;
     box-shadow: 0 0 5px rgba(255, 255, 255 , 0.4);
     border-top-left-radius: 5px;
@@ -67,6 +67,8 @@
     transition: all 1s cubic-bezier(1, 0, 0, 1);
     button {
         font-size: 20px;
+        background: none;
+        color: #fff;
     }
     &.opened {
         transform: translate(0%, -50%);

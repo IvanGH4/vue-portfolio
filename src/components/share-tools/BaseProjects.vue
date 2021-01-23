@@ -3,17 +3,17 @@
   <div class="container-projects text-light" v-if="showing">
 
       <div :class="[sidebar, {'opened': isSideOpen}]">
-          <button class="btn bg-secondary" @click="showSidebar">
+          <button class="btn" @click="showSidebar">
             <i :class="['fas', {'fa-angle-left': !isSideOpen}, {'fa-angle-right': isSideOpen}]"></i>
           </button>
           <small>
-              <a href="https://testimonial-grid-woad.vercel.app/" target="_blank">Testimonial Grid</a>
+              <a class="text-light" href="https://vue-recipe-app.vercel.app/" target="_blank">Recipe App</a>
           </small>
           <small>
-              <a href="https://ping-coming-soon-challenge.vercel.app/" target="_blank">Coming Soon Page</a>
+              <a class="text-light" href="https://dashboard-theme-switcher-6w1v4s1tr.vercel.app/" target="_blank">Theme Switcher</a>
           </small>
           <small>
-              <a href="https://huddle-landing-challenge.vercel.app/" target="_blank">Landing</a>
+              <a class="text-light" href="https://huddle-landing-challenge.vercel.app/" target="_blank">Landing</a>
           </small>
       </div>
 
@@ -106,7 +106,10 @@ export default {
         }
     },
     mounted() {
-        this.showing = true
+        this.showing = true;
+        setTimeout(() => {
+            this.isSideOpen = true
+        }, 2000);
     },
     methods: {
         showSidebar() {
