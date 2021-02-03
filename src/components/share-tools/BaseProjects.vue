@@ -23,17 +23,17 @@
       </div> -->
       <div class="card rounded-sm px-20 py-20">
           <div class="gradient-bg">
-              <img class="rounded-sm" src="@/assets/imgs/cpgames.png" alt="#" />
+              <img class="rounded-sm" src="@/assets/imgs/blog.png" alt="#" />
           </div>
           <div class="desc">
-              <h2 class="my-10">Capital Games</h2>
-              <p>For this project I used Firebase firestore, auth, and Vue Js / Vuex / Vue router. Go play !</p>
+              <h2 class="my-10">Dev-Spot Blog App</h2>
+              <p>Blog app where you can publish, filter, and read articles. Made with Vue, Tailwind, and Firebase(Auth, Firestore, Storage).</p>
               <div class="d-flex proj-link">
-                <a href="https://capitalgamesig.web.app" target="_blank">Live Project</a>
-                <a href="https://github.com/IvanGH4/cap-gaming" target="_blank"><i class="fab fa-github mx-10"></i>Repo</a>
+                <a href="https://dev-spot-blog.web.app/" target="_blank">Live Project</a>
+                <a href="https://github.com/IvanGH4/vue-blog" target="_blank"><i class="fab fa-github mx-10"></i>Repo</a>
               </div>
           </div>
-      </div>
+      </div> 
 
       <div class="card rounded-sm px-20 py-20">
           <div class="gradient-bg">
@@ -48,6 +48,20 @@
               </div>
           </div>
       </div> 
+
+      <div class="card rounded-sm px-20 py-20">
+          <div class="gradient-bg">
+              <img class="rounded-sm" src="@/assets/imgs/cpgames.png" alt="#" />
+          </div>
+          <div class="desc">
+              <h2 class="my-10">Capital Games</h2>
+              <p>For this project I used Firebase firestore, auth, and Vue Js / Vuex / Vue router. Go play !</p>
+              <div class="d-flex proj-link">
+                <a href="https://capitalgamesig.web.app" target="_blank">Live Project</a>
+                <a href="https://github.com/IvanGH4/cap-gaming" target="_blank"><i class="fab fa-github mx-10"></i>Repo</a>
+              </div>
+          </div>
+      </div>
 
        <div class="card rounded-sm px-20 py-20">
           <div class="gradient-bg">
@@ -68,19 +82,6 @@
        <div class="image">
           <img src="@/assets/imgs/movie.svg" alt="free" />
       </div> -->
-       <div class="card rounded-sm px-20 py-20">
-          <div class="gradient-bg">
-              <img class="rounded-sm" src="@/assets/imgs/movieList-min.png" alt="#" />
-          </div>
-          <div class="desc">
-              <h2 class="my-10">Movie List</h2>
-              <p>This project lists movies from TheMovieDB. It includes pagination and a search option.</p>
-              <div class="d-flex proj-link">
-                <a href="https://movieapp-practice.web.app/" target="_blank">Live Project</a>
-                <a href="https://github.com/IvanGH4/movie-list" target="_blank"><i class="fab fa-github mx-10"></i>Repo</a>
-              </div>
-          </div>
-      </div> 
     
       <!-- <div class="image">
           <img src="@/assets/imgs/todo.svg" alt="tasks" />
