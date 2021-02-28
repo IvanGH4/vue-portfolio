@@ -13,87 +13,70 @@
               <a class="text-light" href="https://dashboard-theme-switcher-6w1v4s1tr.vercel.app/" target="_blank">Theme Switcher</a>
           </small>
           <small>
-              <a class="text-light" href="https://huddle-landing-challenge.vercel.app/" target="_blank">Landing</a>
+              <a class="text-light" href="https://github.com/IvanGH4/test" target="_blank">Node Blog</a>
           </small>
       </div>
 
-      <!-- <div class="image">
-          <h2>My Projects!</h2>
-          <img src="@/assets/imgs/team.svg" alt="free" />
-      </div> -->
+    <!-- Cards  -->
       <div class="card rounded-sm px-20 py-20">
-          <div class="gradient-bg">
-              <img class="rounded-sm" src="@/assets/imgs/blog.png" alt="#" />
-          </div>
-          <div class="desc">
-              <h2 class="my-10">Dev-Spot Blog App</h2>
-              <p>Blog app where you can publish, filter, and read articles. Made with Vue, Tailwind, and Firebase(Auth, Firestore, Storage).</p>
-              <div class="d-flex proj-link">
-                <a href="https://dev-spot-blog.web.app/" target="_blank">Live Project</a>
-                <a href="https://github.com/IvanGH4/vue-blog" target="_blank"><i class="fab fa-github mx-10"></i>Repo</a>
-              </div>
-          </div>
+        <div class="gradient-bg">
+            <img class="rounded-sm" src="@/assets/imgs/dev-blog.png" alt="#" />
+        </div>
+        <BaseProjectCard
+            :title="projects[0].title"    
+            :desc="projects[0].desc"
+            :live="projects[0].live"
+            :repo="projects[0].repo"
+        />
       </div> 
 
       <div class="card rounded-sm px-20 py-20">
           <div class="gradient-bg">
               <img class="rounded-sm" src="@/assets/imgs/todoapp-min.png" alt="todo" />
           </div>
-          <div class="desc">
-              <h2 class="my-10">Todo App</h2>
-              <p>In this todo app you can store your todos, filter them, and delete them. There's also a theme picker. <small>Idea from <a href="https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW" target="_blank">Front end Mentor</a></small></p>
-              <div class="d-flex proj-link">
-                <a href="https://todo-app-ruddy.vercel.app/" target="_blank">Live Project</a>
-                <a href="https://github.com/IvanGH4/todo-app-challenge" target="_blank"><i class="fab fa-github mx-10"></i>Repo</a>
-              </div>
-          </div>
+          <BaseProjectCard
+            :title="projects[1].title"    
+            :desc="projects[1].desc"
+            :live="projects[1].live"
+            :repo="projects[1].repo"
+        />
       </div> 
 
       <div class="card rounded-sm px-20 py-20">
           <div class="gradient-bg">
               <img class="rounded-sm" src="@/assets/imgs/cpgames.png" alt="#" />
           </div>
-          <div class="desc">
-              <h2 class="my-10">Capital Games</h2>
-              <p>For this project I used Firebase firestore, auth, and Vue Js / Vuex / Vue router. Go play !</p>
-              <div class="d-flex proj-link">
-                <a href="https://capitalgamesig.web.app" target="_blank">Live Project</a>
-                <a href="https://github.com/IvanGH4/cap-gaming" target="_blank"><i class="fab fa-github mx-10"></i>Repo</a>
-              </div>
-          </div>
+          <BaseProjectCard
+            :title="projects[2].title"    
+            :desc="projects[2].desc"
+            :live="projects[2].live"
+            :repo="projects[2].repo"
+        />
       </div>
 
        <div class="card rounded-sm px-20 py-20">
           <div class="gradient-bg">
               <img class="rounded-sm" src="@/assets/imgs/mem-min.png" alt="#" />
           </div>
-          <div class="desc">
-              <h2 class="my-10">Memory Game</h2>
-              <p>Simple memory game built with Javascript</p>
-              <div class="d-flex proj-link">
-                <a href="https://romantic-euclid-701120.netlify.app/" target="_blank">Live Project</a>
-                <a href="https://github.com/IvanGH4/memory-game" target="_blank"><i class="fab fa-github mx-10"></i>Repo</a>
-              </div>
-          </div>
+          <BaseProjectCard
+            :title="projects[3].title"    
+            :desc="projects[3].desc"
+            :live="projects[3].live"
+            :repo="projects[3].repo"
+        />
       </div>
-      <!-- <div class="image w">
-          <img src="@/assets/imgs/weather.svg" alt="free" />
-      </div>
-       <div class="image">
-          <img src="@/assets/imgs/movie.svg" alt="free" />
-      </div> -->
-    
-      <!-- <div class="image">
-          <img src="@/assets/imgs/todo.svg" alt="tasks" />
-      </div> -->
   </div>
 </transition>
 </template>
 
 <script>
+import BaseProjectCard from '@/components/share-tools/BaseProjectCard';
 
 export default {
     name: 'BaseProjects',
+    components: {
+        BaseProjectCard
+    },
     props: {
         sidebar: {
             type: String,
@@ -103,7 +86,33 @@ export default {
     data() {
         return {
             showing: false,
-            isSideOpen: false
+            isSideOpen: false,
+            projects: [
+                {
+                    title: 'Dev-spot Blog App',
+                    desc: 'Blog app where you can publish, filter, and read articles. Made with Vue, Tailwind, and Firebase(Auth, Firestore, Storage).',
+                    live: 'https://dev-spot-blog.web.app/',
+                    repo: 'https://github.com/IvanGH4/vue-blog'
+                },
+                {
+                    title: 'Todo App',
+                    desc: "In this todo app you can store your todos, filter them, and delete them. There's also a theme picker.",
+                    live: 'https://todo-app-ruddy.vercel.app/',
+                    repo: 'https://github.com/IvanGH4/todo-app-challenge'
+                },
+                {
+                    title: 'Capital Games',
+                    desc: 'For this project I used Firebase firestore, auth, and Vue Js / Vuex / Vue router. Go play !',
+                    live: 'https://capitalgamesig.web.app',
+                    repo: 'https://github.com/IvanGH4/cap-gaming'
+                },
+                {
+                    title: 'Memory Game',
+                    desc: 'Simple memory game built with Javascript',
+                    live: 'https://romantic-euclid-701120.netlify.app/',
+                    repo: 'https://github.com/IvanGH4/memory-game'
+                },
+            ]
         }
     },
     mounted() {
