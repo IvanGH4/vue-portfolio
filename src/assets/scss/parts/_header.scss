@@ -1,48 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap");
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .navbar {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
 
 .circle-abs {
-    position: absolute;
-    top: -100px;
-    right: -50px;
-    width: 200px;
-    height: 200px;
-    z-index: 1;
-    border-radius: 50%;
-    background-color: #fff;
+  position: absolute;
+  top: -100px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  border-radius: 50%;
+  background-color: #fff;
 }
 
 .nav-items {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.myName {
-    font-family: 'Fira Code', monospace, sans-serif;
-    letter-spacing: 1.5px;
-    text-align: center;
-    font-size: 18px;
+.links {
+  font-family: "Fira Code", monospace, sans-serif;
+  letter-spacing: 1.5px;
+  text-align: center;
+  font-size: 18px;
+  a {
+    text-decoration: none;
+    @extend .text-light;
+  }
+
+  .link {
+    position: relative;
+  }
+
+  .link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #518071;
+    transform: scaleX(0);
+    transition: all 0.2s ease-in-out;
+    transform-origin: left;
+  }
+
+  .link:hover::after {
+    transform: scaleX(1);
+  }
+
+  .custom-link {
+    margin-right: 2rem;
+    padding-right: 2rem;
+    border-right: solid 1px #518071;
+  }
 }
 
 .icons {
-    z-index: 199;
-    a {
-        margin-left: 10px;
-        font-size: 18px;
-    }
+  z-index: 199;
+  a {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .links {
+    display: none;
+  }
 }

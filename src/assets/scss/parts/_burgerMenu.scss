@@ -1,121 +1,130 @@
-.hamburger{
-    position: fixed;
-    top: 0px;
-    left: 15px;
-    z-index: 9999;
-    cursor: pointer;
-    background: none;
-    border: 0;
-    padding: 0;
-    width: 60px;
-    height: 60px;
-    span{
-      border-radius: 5px;
-      background: white;
-      display: block;
-      width: 60%;
-      margin: 5px auto;
-      height: 2px;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
-    }
+.mobile-btn {
+  display: none;
+}
+
+.hamburger {
+  position: fixed;
+  top: 0px;
+  right: 30px;
+  z-index: 9999;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  span {
+    border-radius: 5px;
+    background: white;
+    display: block;
+    width: 60%;
+    margin: 5px auto;
+    height: 2px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
   }
-  
+}
+
 .link-menu-item {
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
   &:hover {
     @extend .text-info;
   }
 }
 
-  .hamburger.open .top-line{
-    animation-name: top-line-animation;
+.hamburger.open .top-line {
+  animation-name: top-line-animation;
+}
+
+.hamburger.open .middle-line {
+  animation-name: middle-line-animation;
+}
+
+.hamburger.open .bottom-line {
+  animation-name: bottom-line-animation;
+}
+
+.top-line {
+  animation-name: top-line-animation-close;
+}
+
+.middle-line {
+  animation-name: middle-line-animation-close;
+}
+
+.bottom-line {
+  animation-name: bottom-line-animation-close;
+}
+
+@keyframes top-line-animation {
+  50%,
+  100% {
+    margin: 0 auto;
+    transform: translateY(2px) rotate(-45deg);
   }
-  
-  .hamburger.open .middle-line{
-    animation-name: middle-line-animation;
+}
+
+@keyframes bottom-line-animation {
+  50%,
+  100% {
+    margin: 0 auto;
+    transform: translateY(-2px) rotate(45deg);
   }
-  
-  .hamburger.open .bottom-line{
-    animation-name: bottom-line-animation;
+}
+
+@keyframes middle-line-animation {
+  20%,
+  100% {
+    margin: 0 auto;
+    width: 0;
+    opacity: 0;
   }
-  
-  .top-line{
-    animation-name: top-line-animation-close;
+}
+
+@keyframes top-line-animation-close {
+  0% {
+    margin: 0 auto;
+    transform: translateY(2px) rotate(-45deg);
   }
-  
-  .middle-line{
-    animation-name: middle-line-animation-close;
+
+  50%,
+  100% {
+    margin: 5px auto;
+    transform: translateY(0px) rotate(0deg);
   }
-  
-  .bottom-line{
-    animation-name: bottom-line-animation-close;
+}
+
+@keyframes middle-line-animation-close {
+  0% {
+    margin: 0 auto;
+    width: 0;
+    opacity: 0;
   }
-  
-  @keyframes top-line-animation{
-    50%, 100%{
-      margin: 0 auto;
-      transform: translateY(2px) rotate(-45deg);
-    }
+
+  20%,
+  100% {
+    margin: 5px auto;
+    width: 60%;
+    opacity: 1;
   }
-  
-  @keyframes bottom-line-animation{
-    50%, 100%{
-      margin: 0 auto;
-      transform: translateY(-2px) rotate(45deg);
-    }
+}
+
+@keyframes bottom-line-animation-close {
+  0% {
+    margin: 0 auto;
+    transform: translateY(-2px) rotate(45deg);
   }
-  
-  @keyframes middle-line-animation{
-    20%, 100%{
-      margin: 0 auto;
-      width: 0;
-      opacity: 0;
-    }
+
+  50%,
+  100% {
+    margin: 5 auto;
+    transform: translateY(0px) rotate(0deg);
   }
-  
-  @keyframes top-line-animation-close{
-    0%{
-      margin: 0 auto;
-      transform: translateY(2px) rotate(-45deg);
-    }
-  
-    50%, 100%{
-      margin: 5px auto;
-      transform: translateY(0px) rotate(0deg);
-  
-    }
-  }
-  
-  @keyframes middle-line-animation-close{
-    0%{
-      margin: 0 auto;
-      width: 0;
-      opacity: 0;
-    }
-  
-    20%, 100%{
-      margin: 5px auto;
-      width: 60%;
-      opacity: 1;
-    }
-  }
-  
-  @keyframes bottom-line-animation-close{
-    0%{
-      margin: 0 auto;
-      transform: translateY(-2px) rotate(45deg);
-    }
-  
-    50%, 100%{
-      margin: 5 auto;
-      transform: translateY(0px) rotate(0deg);
-    }
-  }
+}
 
 .menu-links {
   a {
-    transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
     &:hover {
       @extend .text-info;
     }
@@ -134,15 +143,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(0 ,0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   transform-origin: left center;
-  // transition: all .4s ease-in;
   transition: all 1s cubic-bezier(1, 0, 0, 1);
   z-index: 999;
   @extend .text-light;
   li {
+    position: relative;
     @extend .my-10;
-    z-index: 999;
+    z-index: 9999;
     a {
       z-index: 9999;
       @extend .text-light;
@@ -155,8 +164,12 @@
   transform: scaleX(1);
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   .side-menu {
     width: 100%;
+    justify-content: start;
+  }
+  .mobile-btn {
+    display: block;
   }
 }

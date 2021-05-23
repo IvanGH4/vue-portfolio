@@ -1,6 +1,7 @@
 <template>
-  <div class="container-portada">
-      <transition name="slide">
+  <div class="intro-wrapper bg-primary px-40 py-20">
+    <div class="container-portada">
+      <!-- <transition name="slide">
         <div class="portada-left" v-if="show">
                 <div class="d-flex my-pic">
                     <img src="@/assets/imgs/me.png" alt="me" />
@@ -40,20 +41,58 @@
 
           </div>
       </div>
-      </transition>
+      </transition> -->
+      <div class="row">
+        <div class="col">
+          <h2 id="name" class="text-info">Iván García</h2>
+          <h1 id="title" class="text-light">
+            Full Stack Develo<span class="text-primary">per</span>
+          </h1>
+        </div>
+        <div class="col circles-wrapper" id="intro-img">
+          <div class="circle-1"></div>
+          <div class="circle-2"></div>
+          <div class="circle-3"></div>
+        </div>
+        <div class="col-md-4 circles-wrapper" id="intro-img">
+          <div class="circle-1" ref="cir1"></div>
+          <div class="circle-2" ref="cir2"></div>
+          <div class="circle-3" ref="cir3"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-    name: 'BaseIntro',
-    data() {
-        return {
-            show: false
-        }
-    },
-    mounted() {
-        this.show = true
-    }
-}
+  name: "BaseIntro",
+  data() {
+    return {
+      show: false,
+    };
+  },
+  mounted() {
+    this.show = true;
+    this.$refs.cir1.style.display = "block";
+    this.$refs.cir2.style.display = "block";
+    this.$refs.cir3.style.display = "block";
+    setInterval(() => {
+      let left1 = Math.floor(Math.random() * 300);
+      let left2 = Math.floor(Math.random() * 250);
+      let left3 = Math.floor(Math.random() * 200);
+      let top1 = Math.floor(Math.random() * 200);
+      let top2 = Math.floor(Math.random() * 150);
+      let top3 = Math.floor(Math.random() * 100);
+
+      this.$refs.cir1.style.left = `${left1}px`;
+      this.$refs.cir2.style.left = `${left2}px`;
+      this.$refs.cir3.style.left = `${left3}px`;
+      this.$refs.cir1.style.top = `-${top1}px`;
+      this.$refs.cir2.style.top = `-${top2}px`;
+      this.$refs.cir3.style.top = `-${top3}px`;
+    }, 700);
+  },
+  methods: {},
+};
 </script>
